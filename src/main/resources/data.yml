@@ -1,0 +1,19 @@
+server:
+  dataLoadedMessage: "Data has been initiated!"
+  lives: 1
+  challenges:
+    fishing:
+      completed: 1
+      current: 0
+    fighting:
+      completed: 1
+      current: 0
+    mining:
+      completed: 1
+      current: 0
+    building:
+      completed: 1
+      current: 0
+    achievements:
+      completed: 1
+      current: 0

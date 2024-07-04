@@ -1,0 +1,17 @@
+name: TheBois
+version: '1.0-SNAPSHOT'
+main: org.laykon.thebois.TheBois
+api-version: '1.21'
+
+commands:
+  ping:
+  tpa:
+  tpaccept:
+  nextreboot:
+  home:
+  hardcore:
+  togglehardcore:
+  dev/lives/remove:
+  dev/lives/add:
+  lives:
+  dev/challenges/mining:
