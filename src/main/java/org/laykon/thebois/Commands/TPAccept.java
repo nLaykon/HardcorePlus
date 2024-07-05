@@ -17,6 +17,11 @@ public class TPAccept implements CommandExecutor {
             return false;
         }
         Player target = TPA.tpRequests.get(player);
+        if (target == null){
+            sender.sendMessage("§aYou §cdenied §aa TPA requests!");
+            TPA.tpRequests.remove(player);
+            return true;
+        }
         target.teleport(player.getLocation());
         player.sendMessage("§aTP Success");
         target.sendMessage("§aTP Success");
