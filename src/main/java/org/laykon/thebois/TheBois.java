@@ -57,6 +57,7 @@ public final class TheBois extends JavaPlugin {
         cmd("dev/lives/remove", new RemoveLife());
         cmd("lives", new LivesGuiCommand());
         cmd("dev/challenges/mining", new CheckBlockBreakChallenge());
+        cmd("msg", new PrivateMessage());
 
         event(new HardCorePlusEvent());
         event(new JoinHandler());

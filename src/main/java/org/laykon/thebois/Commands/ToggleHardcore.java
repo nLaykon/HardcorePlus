@@ -17,7 +17,8 @@ public class ToggleHardcore implements CommandExecutor {
 
         if (sender instanceof Player){
             Player player = (Player) sender;
-            if (player.getName() != "nLaykon"){
+            System.out.println(player.getName());
+            if (!player.getName().equalsIgnoreCase("nLaykon")){
                 player.sendMessage("§cYou are not allowed to use this :(");
                 return false;
             }

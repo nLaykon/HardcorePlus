@@ -15,3 +15,4 @@ commands:
   dev/lives/add:
   lives:
   dev/challenges/mining:
+  msg:
