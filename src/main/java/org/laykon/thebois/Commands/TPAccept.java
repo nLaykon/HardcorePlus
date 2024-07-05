@@ -27,6 +27,5 @@ public class TPAccept implements CommandExecutor {
         target.sendMessage("§aTP Success");
         TPA.tpRequests.remove(player);
         return true;
-        //testcomment
     }
 }
