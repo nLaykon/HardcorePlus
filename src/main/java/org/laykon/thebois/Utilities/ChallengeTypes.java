@@ -5,7 +5,7 @@ public enum ChallengeTypes {
     FIGHTING("fighting", 100, 200),
     MINING("mining", 50, 150),
     BUILDING("building", 50, 150),
-    ACHIEVEMENTS("achievements", 1, 3);
+    ACHIEVEMENTS("achievements", 5, 10);
 
     private final String name;
     private final int minDifficulty;

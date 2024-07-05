@@ -49,6 +49,7 @@ public final class TheBois extends JavaPlugin {
         cmd("ping", new Ping());
         cmd("tpa", new TPA());
         cmd("tpaccept", new TPAccept());
+        cmd("tpdeny", new TPDeny());
         cmd("nextreboot", new NextReboot());
         cmd("home", new Home());
         cmd("hardcore", new Hardcore());

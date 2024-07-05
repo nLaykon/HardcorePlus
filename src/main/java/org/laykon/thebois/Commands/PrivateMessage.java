@@ -1,6 +1,7 @@
 package org.laykon.thebois.Commands;
 
 import org.bukkit.Bukkit;
+import org.bukkit.Sound;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -11,7 +12,7 @@ public class PrivateMessage implements CommandExecutor {
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
         String name;
-        Player player;
+        Player player = null;
         if (!(sender instanceof Player)){
             name = "§8[§aPM§8]§r §8[§7Console§8]§r §a→ ";
         }else {
@@ -25,6 +26,11 @@ public class PrivateMessage implements CommandExecutor {
         Player target = Bukkit.getPlayer(args[0]);
         if (target == null){
             sender.sendMessage("§cInvalid Player!");
+            return false;
+        }
+
+        if (target == player){
+            sender.sendMessage("§cYou cannot message yourself!");
             return false;
         }
 
@@ -42,7 +48,9 @@ public class PrivateMessage implements CommandExecutor {
             }
         }
 
+
         target.sendMessage(String.valueOf(sentString));
+        target.playSound(target, Sound.ENTITY_PLAYER_LEVELUP, 10, 0);
         sender.sendMessage(String.valueOf(sentString));
 
         return true;
