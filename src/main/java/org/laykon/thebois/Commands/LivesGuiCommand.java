@@ -81,6 +81,7 @@ public class LivesGuiCommand implements CommandExecutor, Listener {
                     break;
             }
             index++;
+            //test
         }
         ((Player) sender).openInventory(livesInv);
         return true;

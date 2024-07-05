@@ -15,7 +15,7 @@ public class AddLife implements CommandExecutor {
             sender.sendMessage("§cThis is a development command, you cannot use it!");
             return false;
         }
-
+        //test
 
         data.addLife();
         return true;
